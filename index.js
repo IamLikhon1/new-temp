@@ -16,6 +16,7 @@ const loadTemp=city=>{
  document.getElementById('searchBtn').addEventListener('click',function(){
     const inputField=document.getElementById('inputField');
     const city=inputField.value;
+    inputField.value=''
     document.getElementById('city').innerText= city
     
     loadTemp(city)
